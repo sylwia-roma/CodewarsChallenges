@@ -18,13 +18,17 @@ import java.util.LinkedList;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(persistence(4));
+        System.out.println(persistence(999));
     }
 
     public static int persistence(long n) {
         LinkedList<Integer> stack = new LinkedList<Integer>();
         int score=1;
         int finalScore=Integer.MAX_VALUE;
+        int tmp=0;
+        if(n<10){
+            return 0;
+        }
 
         while (finalScore>9) {
                 while (n > 0) {
@@ -43,8 +47,9 @@ public class Main {
 
                 finalScore=score;
                 score=1;
+                tmp++;
             }
 
-        return finalScore;
+        return tmp;
     }
 }
