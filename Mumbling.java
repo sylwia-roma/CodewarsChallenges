@@ -42,6 +42,7 @@ public class Main {
         return newString2;
 
 
+        //SECOND SOLUTION
 //        String result = "";
 //        for(int i = 0; i != s.length(); i++)
 //        {
